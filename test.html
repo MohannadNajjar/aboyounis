@@ -1,0 +1,42 @@
+<h1>My Awesome Settings Page</h1>
+
+<form class='mohannad_set_form' method="POST">
+    
+	<hr>
+	<label for="p1">picture #1</label>
+    <input type="text" name="photo_1" id="p1" value="<?php echo $photo_1; ?>">
+	<label for="l_1">link #1</label>
+	<input type="text" name="link_1" id="l_1" value="<?php echo $link_1; ?>">
+	<hr>
+	<label for="p2">picture #1</label>
+    <input type="text" name="photo_2" id="p2" value="<?php echo $photo_2; ?>">
+	<label for="l_2">link #2</label>
+	<input type="text" name="link_2" id="l_2" value="<?php echo $link_2; ?>">
+	<hr>
+	
+    <input  type="submit" value="Save mohannad setup" class="button button-primary button-large">
+</form>
+<hr>
+<img src="<?php echo $photo_1; ?>" alt="<?php echo $link_1; ?>" >
+<caption><?php echo $link_1; ?></caption>
+<br>
+<img src="<?php echo $photo_2; ?>" alt="<?php echo $link_2; ?>">
+<style>
+img {
+	max-width = 50px;
+}
+.mohannad_set_form{
+	display: grid !important;
+	text-align: right ;
+	margin-bottom:  100px !important;
+	color:red ;
+	direction: rtl !important;
+max-width: 700px;
+}
+label {
+	margin: 10px;
+	color: green;
+	font-weight: blod ;
+	font-size: 20px;
+}
+</style>
